@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.1",
+    "vitest": "^3.0.5"
+  }
+}
