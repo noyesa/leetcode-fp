@@ -1,7 +1,13 @@
 import { describe, it, expect } from 'vitest';
 
 /**
- * Merges two non-empty arrays.
+ * Merges two non-empty arrays. Only works if the arguments are non-empty.
+ * @template T
+ * @param {T} lHead - The first element in the left array.
+ * @param {T[]} - The remaining elements in the left array.
+ * @param {T} rHead - The first element in the right array.
+ * @param {T[]} rRest - The remaining elements in the right array.
+ * @returns {T[]} - An array containing all the elements in left and right.
  */
 const mergeNonEmptyArrays = ([lHead, ...lRest], [rHead, ...rRest]) => [
   lHead,

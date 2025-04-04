@@ -1,4 +1,4 @@
-import { describe, it, expect, assert } from "vitest";
+import { describe, it, expect, assert } from 'vitest';
 
 /**
  * Subtracts all its arguments in order.
@@ -21,8 +21,8 @@ const intersection = (nums) =>
       .reduce((prev, next) => next.intersection(prev)),
   ).sort(subtract);
 
-describe("intersection", () => {
-  it("solves example #1", () => {
+describe('intersection', () => {
+  it('solves example #1', () => {
     const nums = [
       [3, 1, 2, 4, 5],
       [1, 2, 3, 4],
@@ -32,7 +32,7 @@ describe("intersection", () => {
     expect(intersection(nums)).toEqual([3, 4]);
   });
 
-  it("solves example #2", () => {
+  it('solves example #2', () => {
     const nums = [
       [1, 2, 3],
       [4, 5, 6],
@@ -40,7 +40,7 @@ describe("intersection", () => {
     expect(intersection(nums)).toEqual([]);
   });
 
-  it("solves example #3", () => {
+  it('solves example #3', () => {
     const nums = [
       [4, 43, 15, 30, 27, 22],
       [15, 30, 43, 27, 10, 4],
